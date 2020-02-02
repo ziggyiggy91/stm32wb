@@ -1,18 +1,4 @@
-/*
-64 MHz max clock. 
-
-*/
-
-
-
-typedef struct{
-  int div;
-  
-
-
-}sysclk;
-
-
+/* 64 MHz max clock. */
 void config_clocks(){
  
  
@@ -179,14 +165,6 @@ void config_pll_clock(){
 	  
 	/* Do more configurations ? */
 	
-	RCC_PLLCFGR = (
-	
-	
-	
-	
-	
-	
-	
 	/*Re-enable HSE */
 	RCC_CR = (RCC_CR&~0x05000000)| 0x05 <<24; 
 	
@@ -276,36 +254,4 @@ void configure_system_clock(){
 	RCC_CFGR = (RCC_CFGR & ~0x70000000) | mco_prescaler <<28;
 	
 }
-
-
-
-
-/* struct for RCC_CCIPR register 
-  0000: MCO output disabled, no clock on MCO
-  0001: SYSCLK system clock selected
-  0010: MSI clock selected.0011: HSI16 clock selected.
-  0100: HSE clock selected (after stabilization)
-  0101: Main PLLRCLK clock selected
-  0110: LSI1 clock selected
-  0111: LSI2 clock selected
-  1000: LSE clock selected
-  1001: Internal HSI48 clock selected
-  1100: HSE clock selected (before stabilization)
-*/
-
-typedef struct {
-	int RNGSEL;
-	int ADCSEL;
-	int CLK48SEL;
-	int SAI1SEL;
-	int LPTIM2SEL;
-	int LPTIM1SEL;
-	int I2C3SEL;
-	int I2C1SEL;
-	int LPUART1SEL;
-	int USART1SEL;
-}ccipr;
-
- 
-
 
