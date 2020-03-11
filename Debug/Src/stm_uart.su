@@ -1,0 +1,5 @@
+stm_uart.c:16:6:uart_config_clock	32	static
+stm_uart.c:163:5:usart_rx	16	static
+stm_uart.c:175:6:usart_tx	16	static
+stm_uart.c:186:6:send_buffer	24	static
+stm_uart.c:198:6:receive_buffer	24	static

@@ -1,0 +1,5 @@
+stm_clk.c:15:6:config_msi_clock	16	static
+stm_clk.c:66:6:config_hsi_clock	16	static
+stm_clk.c:101:6:config_hse_clock	16	static
+stm_clk.c:129:6:config_pll_clock	16	static
+stm_clk.c:153:6:configure_system_clock	16	static

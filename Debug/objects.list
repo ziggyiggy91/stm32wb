@@ -1,0 +1,6 @@
+"Src/main.o"
+"Src/stm_clk.o"
+"Src/stm_uart.o"
+"Src/syscalls.o"
+"Src/sysmem.o"
+"Startup/startup_stm32wb55rgvx.o"
